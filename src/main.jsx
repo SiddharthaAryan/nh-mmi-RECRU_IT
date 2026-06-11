@@ -1,1 +1,10 @@
-import React,{useEffect,useMemo,useState}from'react';import{createRoot}from'react-dom/client';import{initializeApp}from'firebase/app';import{getAuth,onAuthStateChanged,signInWithEmailAndPassword,signOut}from'firebase/auth';import{getFirestore,collection,addDoc,onSnapshot,orderBy,query,serverTimestamp,doc,updateDoc}from'firebase/firestore';import{getStorage,ref,uploadBytes,getDownloadURL}from'firebase/storage';import{motion,
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import App from './App.jsx';
+import './styles.css';
+
+createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
