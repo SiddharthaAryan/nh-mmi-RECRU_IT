@@ -6,7 +6,8 @@ service cloud.firestore {
       return request.auth != null && request.auth.token.email in [
         'aryansiddhartha03@gmail.com',
         'nirupam.gardia12@gmail.com',
-        'gardianirupam@gmail.com'
+        'gardianirupam@gmail.com',
+        'khushbudayal6@gmail.com'
       ];
     }
     function isValidDepartment(dept) {
