@@ -3,19 +3,13 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  apiKey: 'AIzaSyAHKlqvpQ_DTY3rnILOeOQeKgI8LKOhk0w',
+  authDomain: 'nh-mmi-recruitment.firebaseapp.com',
+  projectId: 'nh-mmi-recruitment',
+  storageBucket: 'nh-mmi-recruitment.firebasestorage.app',
+  messagingSenderId: '142761644358',
+  appId: '1:142761644358:web:f742076fc108b74c411547'
 };
-
-const missingConfig = Object.entries(firebaseConfig).filter(([, value]) => !value);
-
-if (missingConfig.length > 0) {
-  console.warn('Missing Firebase env values:', missingConfig.map(([key]) => key).join(', '));
-}
 
 export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
