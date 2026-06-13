@@ -7,7 +7,8 @@ service cloud.firestore {
         'aryansiddhartha03@gmail.com',
         'nirupam.gardia12@gmail.com',
         'gardianirupam@gmail.com',
-        'khushbudayal6@gmail.com'
+        'khushbudayal6@gmail.com',
+        'namboodiriveena@gmail.com'
       ];
     }
     function isValidDepartment(dept) {
